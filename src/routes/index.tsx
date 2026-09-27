@@ -5,6 +5,7 @@ import { NewsPresentation } from "../components/NewsPresentation";
 // __root.tsx, and ships no og:image so serve-time hosting can inject the
 // project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
+  ssr: false,
   head: () => ({
     meta: [
       { title: "4 UUDIST — uudiste esitlus" },
